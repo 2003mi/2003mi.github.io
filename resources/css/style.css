@@ -47,6 +47,11 @@ h1, h2, h3, h6 {
 	width: 180px;
 	float: left;
 	padding: 0px;
+	
+}
+#link ul {
+	text-align: center;
+	list-style-type: none;
 }
 
 #main {
@@ -91,6 +96,7 @@ color: #f4f427;
 }
 #link h3 {
 	color: #f4f427;
+	text-align: right;
 }
 #link a {
 	color: red;
