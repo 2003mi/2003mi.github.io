@@ -1,0 +1,131 @@
+#body_old {
+	background: url('../pictures/ZaVlJs.jpg') no-repeat;
+	/*background-size: cover;*/
+	background-size: 100% auto;
+    background-attachment: fixed;
+	font-family: Times New Roman, Comic Sans MS;
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+}
+#body{
+	/* background-color: coral; */
+	background: url('../image/bch1.jpg') no-repeat;
+	background-size: cover;
+	font-family: Arial;
+	overflow-y: scroll;
+	background-attachment: fixed;
+	background-position: center; 
+}
+#container{
+	/*background-color:white;*/	
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+h1, h2, h3, h6 {
+	margin: 0;
+}
+
+#header {
+	/*background-color: #49BAD8;*/
+	background: url('../image/ma1.png');
+	background-size: 50px 36px;
+	background-position: left top;
+
+	/*color: black;*/
+	color: #f4f427;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align: center;
+	}
+#content {
+	padding: 0px;
+}
+
+#link {
+	width: 180px;
+	float: left;
+	padding: 0px;
+}
+
+#main {
+	width: 600px;
+	/*float: right;*/
+	padding: 0px;
+}
+#rhiht {
+	float: right;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+#rhiht h1 {
+color: #f4f427;
+}
+
+#down {
+	float: left;
+	color: #f4f427;
+	padding: 10px;
+	top:50%;
+	left:50%;
+}
+
+#footer {
+	/*background-color: #49BAD8;*/
+	background: url('../image/ma1.png');
+	background-size: 50px 36px;
+	background-position: left top;
+	
+	clear: both;
+	padding: 10px;
+	/*color: black;*/
+	color: #56f426;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-align: center;
+}
+
+#link .selected {
+	font-height: bold;
+}
+#link h3 {
+	color: #f4f427;
+}
+#link a {
+	color: red;
+	text-decoration: underline;
+}
+
+#cent {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-50px; /* this is half the height of your div*/  
+  margin-left:-100px; /*this is half of width of your div*/
+}
+
+.hack {
+    width: 130px;
+    height: 100px;
+    background: url("../image/349.jpg") no-repeat;
+    display: inline-block;
+}
+.hack:hover {
+    background: url("../image/lol.gif") no-repeat;
+	width: 130px;
+    height: 100px;
+}
+#hack {
+	background-image: url('../image/349.jpg');
+	background-size: cover;
+	width: 130px;
+    height: 100px;
+}
+
+#hack:hover {
+    background-image: url('../image/lol.gif');
+	background-size: cover;
+	width: 130px;
+    height: 100px;
+}
