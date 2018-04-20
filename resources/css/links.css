@@ -1,0 +1,9 @@
+body {
+    	/* background-color: coral; */
+	background: url('../image/e261e3a13d533247b50b67a8176853523399c9dd.jpg') no-repeat;
+	background-size: cover;
+	font-family: Arial;
+	overflow-y: scroll;
+	background-attachment: fixed;
+	background-position: center; 
+}
