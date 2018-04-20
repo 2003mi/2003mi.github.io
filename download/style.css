@@ -1,0 +1,15 @@
+#inbc{
+	background-color: #000000;
+	
+	font-family: Arial;
+	margin: 0;
+}
+
+#meme{
+	background-color: white;
+	text-align: center;
+}
+
+#meme li {
+	list-style-type: none;
+}
