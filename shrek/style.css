@@ -1,0 +1,24 @@
+body{
+    /*background-color: indigo;*/
+	background: url('Swamp.png') no-repeat;
+	background-size: cover;
+	font-family: Arial;
+	overflow-y: scroll;
+	background-attachment: fixed;
+	background-position: center; 
+    margin: 0;
+    overflow: hidden;
+}
+#div1{
+    /*background-color: white;*/
+    width: 600px;
+    height: 400px;
+}
+
+.centered {
+    position: fixed;
+    top: 68%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+  }
