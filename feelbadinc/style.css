@@ -1,0 +1,31 @@
+#inbc{
+	background-color: #000000;
+	
+	font-family: Arial;
+	margin: 0;
+	height: 100%;
+	text-align: center;
+}
+
+#lol {
+	background-color:#000000;
+	height: 85%;
+	 
+}
+#lol img{
+	height: 100%;
+}
+#hmm{
+	background-color: darkgoldenrod;
+
+}
+#meme{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: dimgray;
+	text-align: center;
+}
+
+#meme li {
+	list-style-type: none;
+}
