@@ -57,6 +57,7 @@
   .menu ul li > label {
     background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;
   }
+ 
   .menu ul li a, .menu ul li label {
     display: block;
     text-align: center;
@@ -66,7 +67,7 @@
     color: #000;
   }
   .menu ul li a:hover, .menu ul li label:hover {
-    color: #556d52;
+    color: #556d52;    
   }
   
   /* hide inputs */
@@ -86,10 +87,10 @@
 
   .sosi {
     /*position: absolute;*/
-    /*position: fixed;*/ /* Set the navbar to fixed position */
+    position: fixed; /* Set the navbar to fixed position */
     top: 0;
     right: 0;
-    position: absolute;
+    /*position: absolute;*/
     line-height: 0px;
     display: block;
     padding: 0;
@@ -103,4 +104,8 @@
   .sosi:hover{
     background: #efefef url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-youtube-512.png) 50% 50%/25px 25px no-repeat;
   }
+
+  .menu label:hover{
+    background: #efefef url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
+  } 
 
