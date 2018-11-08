@@ -13,10 +13,6 @@
     background: #fff;
     color: #000;
     }   
-    #mendf h1{
-        font-family: 'Roboto', sans-serif;
-        margin-top: 2px; 
-    }  
 
   #wrapper {
     position: absolute;
@@ -105,7 +101,7 @@
     background: #efefef url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-youtube-512.png) 50% 50%/25px 25px no-repeat;
   }
 
-  .menu label:hover{
+  #menuhov:hover{
     background: #efefef url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
   } 
 
