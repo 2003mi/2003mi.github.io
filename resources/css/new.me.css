@@ -83,3 +83,24 @@
   .menu-checkbox:checked + .menu {
     transform: translate3d(0, 0, 0);
   }
+
+  .sosi {
+    /*position: absolute;*/
+    /*position: fixed;*/ /* Set the navbar to fixed position */
+    top: 0;
+    right: 0;
+    position: absolute;
+    line-height: 0px;
+    display: block;
+    padding: 0;
+    text-indent: -9999px;
+    background: #fff url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-youtube-512.png) 50% 50%/25px 25px no-repeat;
+  }
+  #sosi{
+    width: 60px;
+    height: 60px;
+  }
+  .sosi:hover{
+    background: #efefef url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-youtube-512.png) 50% 50%/25px 25px no-repeat;
+  }
+
