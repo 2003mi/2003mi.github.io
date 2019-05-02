@@ -1,0 +1,22 @@
+ul { 
+    padding-left: 20px;
+    float:right;
+ }
+ li {
+    display: inline-block;
+    width: auto;
+    list-style: outside none none;
+ }
+ div{
+     float:left;
+     text-align: center;
+     color:blueviolet;
+ }
+ #body{
+     /* background-color: coral; */
+     background-color:black;
+     width: 100%
+ }
+ body{
+   overflow-x: hidden;
+ }
