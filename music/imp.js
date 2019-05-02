@@ -66,6 +66,7 @@ var x = setInterval(function () {
         music.pause();
         playing = 0;
     }
+console.log(playing)
 }, 100);
 
 x;
