@@ -1,12 +1,13 @@
 
 
  .slidecontainer {
-    width: 100px
+    width: 10%;
+    margin-top: 10px;
   }
   
   .slider {
     -webkit-appearance: none;
-    width: 100px;
+    width: 90%;
     height: 10px;
     border-radius: 5px;
     opacity: 0.7;
@@ -35,17 +36,23 @@
   }
 
   .slidecontainerr {
-    width: 1100px;
+    margin-top: 10px;
+    width: 80%;
+  }
+  .controls{
+    width: 10%
   }
   
   .meme {
     -webkit-appearance: none;
-    width: 1000px;
+    width: 80%;
     height: 10px;
     border-radius: 5px;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .meme:hover {

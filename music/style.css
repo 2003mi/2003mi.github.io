@@ -20,3 +20,22 @@ ul {
  body{
    overflow-x: hidden;
  }
+
+ #cont{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:65px;   /* Height of the footer */
+    background: rgb(37, 37, 37);
+ }
+
+ #playing{
+    text-align: unset;
+    margin-top: 40px;
+    float:left;
+    position: fixed;
+ }
+#pa_pl{
+    float: right;
+    margin-right: 50px;
+}

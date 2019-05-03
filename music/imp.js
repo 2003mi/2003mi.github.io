@@ -27,7 +27,7 @@ function play(musi) {
         song = musi;
         playing = 1;
         music.volume = slider.value/100;
-
+        document.getElementById("playing").innerHTML = song;
 
     }
 }
@@ -66,7 +66,6 @@ var x = setInterval(function () {
         music.pause();
         playing = 0;
     }
-console.log(playing)
 }, 100);
 
 x;
