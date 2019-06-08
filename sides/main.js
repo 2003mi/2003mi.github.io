@@ -29,9 +29,6 @@ if(url != undefined) {
     // delets main and replazes it with url that will be rederected to.
     removeElement("main")
     document.write("<a href=", urls[random], ">", urls[random], "</a>", "<br>");
-
-    setTimeout(function(){
-        window.location.href = urls[random];
-        window.location.replace(urls[random]);
-    }, 500);
+    window.location.href = urls[random];
+    window.location.replace(urls[random]);
 }
