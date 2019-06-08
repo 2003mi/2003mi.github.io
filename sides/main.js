@@ -1,65 +1,37 @@
-/*m = Math.floor(Math.random() * 3);
-console.log(m)
-
-
-function load(x){
-    window.location.href = x;
-    window.location.replace(x);
-}
-
-if(m==0){
-    load("https://youtu.be/cPJUBQd-PNM")
-} else if(m==1){
-    load("https://youtu.be/er6OYKP20n0")
-} else if(m==2){
-    load("https://youtu.be/bjMeiHBWns8")
-}*/
-google.load('search', '1');
-google.setOnLoadCallback(OnLoad);
-var search;
-
-//i suggest instead of this to make keywords list so first to pick random keyword than to do search and pick random image
-var keyword = 'furry';
-
-function OnLoad()
-{
-    search = new google.search.ImageSearch();
-
-    search.setSearchCompleteCallback(this, searchComplete, null);
-
-    search.execute(keyword);
-}
-
-function searchComplete()
-{
-    if (search.results && search.results.length > 0)
-    {
-        var rnd = Math.floor(Math.random() * search.results.length);
-
-        //you will probably use jQuery and something like: $('body').css('background-image', "url('" + search.results[rnd]['url'] + "')");
-        document.body.style.backgroundImage = "url('" + search.results[rnd]['url'] + "')";
-    }
-}
-
-
-
-
+// Stock urls until you add some cookies.
 var urls = new Array(
     "https://youtu.be/cPJUBQd-PNM",
     "https://youtu.be/er6OYKP20n0",
     "https://youtu.be/bjMeiHBWns8"
 );
 
-var i;
-for (i = 0; i < 1; i++) { 
+// Gets params that was sent with the url
+url = getAllUrlParams().url;
+fetch = getAllUrlParams().fetch;
+redirect = getAllUrlParams().redirect;
+
+// if the params is valid then store them in a cookie for use later
+if(url != undefined) {
+    console.log(url)
+
+} else if (fetch == "true"){
+    // Gets the cookies and displays them on the wabpage
+    console.log(fetch)
+    document.write("<p id='load'>Fetching cookies...</p>");
+    setTimeout(function(){
+        removeElement("load")
+    }, 1000);   
+
+       // if you come from q/index.html then rederect to random page
+} else if(redirect == "true") {
+    // Gets an random items from either stock urls or the cookies that is stored.
     var random = Math.floor(Math.random()*urls.length);
-    console.log(urls[random])
+    // delets main and replazes it with url that will be rederected to.
+    removeElement("main")
     document.write("<a href=", urls[random], ">", urls[random], "</a>", "<br>");
 
     setTimeout(function(){
         window.location.href = urls[random];
         window.location.replace(urls[random]);
-     }, 500);
+    }, 500);
 }
-
-

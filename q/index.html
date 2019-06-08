@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="../resources/image/4kewsn71vtw11.jpg">
+    <script src="../getparam.js"></script>
     <title>Ho maaan</title>
 </head>
 <body>
     <script>
-        window.location.href = "../sides/q.html";
-        window.location.replace("../sides/q.html");
+        //surce: https://www.sitepoint.com/get-url-parameters-with-javascript/
+
+        // Gets all the params in the url
+        add = getAllUrlParams().add;
+        get = getAllUrlParams().get;
+        // Sets the base url
+        url = "../sides/q.html?redirect=true"
+
+        // checks if the params is valid.
+        if(add != undefined) {
+            url = "../sides/q.html?url=" + add;
+        } else if (get == "True" || get == "true" || get == 1){
+            url = "../sides/q.html?fetch=true";
+        }
+        console.log(url);
+        
+        // rederects you to the main page
+        window.location.href = url;
+        window.location.replace(url);
     </script>
 </body>
 </html>
