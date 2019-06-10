@@ -46,7 +46,7 @@ function submit(){
         document.write("<div id='4f6e6520736d617368206d616e'>");
         document.write("<h1 id='f6e6520736d617368206d616e'>One smash man</h1>", "<br>");
         document.write('<img src="4f6e6520736d617368206d616e.png" alt="Ho gad" height="300" width="251" title="One smash man"/>', '<br>');
-        document.write('<input type="button" onclick="f6e6520736d617368206d616e()" value="Escape" id="button1"></input>', '<br>\n</div>');     
+        document.write('<input type="button" onclick="f6e6520736d617368206d616e()" value="Escape" id="button1"></input>', '<br>\n</div><script src="function.js"></script>');     
     } else{
         var getvalid = validURL(link);
         document.getElementById("txt").innerHTML = link + " is " + getvalid;
