@@ -5,9 +5,6 @@ var urls = new Array(
     "https://youtu.be/bjMeiHBWns8"
 );
 
-// Get the input field // https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
-var input = document.getElementById("urlbox");
-
 
 // Gets params that was sent with the url
 url = getAllUrlParams().url;
@@ -43,8 +40,16 @@ if(url != undefined) {
 
 function submit(){
     var link = urlbox.value;
-    var getvalid = validURL(link);
-    console.log(getvalid);
-    document.getElementById("txt").innerHTML = link + " is " + getvalid;
+
+    if(link=="owo"){
+        removeElement("main")
+        document.write("<div id='4f6e6520736d617368206d616e'>");
+        document.write("<h1 id='f6e6520736d617368206d616e'>One smash man</h1>", "<br>");
+        document.write('<img src="4f6e6520736d617368206d616e.png" alt="Ho gad" height="300" width="251" title="One smash man"/>', '<br>');
+        document.write('<input type="button" onclick="f6e6520736d617368206d616e()" value="Escape" id="button1"></input>', '<br>\n</div>');     
+    } else{
+        var getvalid = validURL(link);
+        document.getElementById("txt").innerHTML = link + " is " + getvalid;
+    };
 };
 

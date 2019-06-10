@@ -18,6 +18,9 @@ function validURL(str) {
   return !!pattern.test(str);
 }
 
+// Get the input field // https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+var input = document.getElementById("urlbox");
+
 // Execute a function when the user releases a key on the keyboard
 input.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
@@ -28,3 +31,12 @@ input.addEventListener("keyup", function(event) {
     document.getElementById("button1").click();
   }
 });
+
+function f6e6520736d617368206d616e(){
+  document.getElementById("f6e6520736d617368206d616e").innerHTML = "536f7572796f20746f204d616a6977617275205368696b69796f6b75206e6f20596f7275206e692e2e2e";
+  alert("There is no escape!")
+  setTimeout(function(){
+    window.location.href = "https://youtu.be/dQw4w9WgXcQ";
+    window.location.replace("https://youtu.be/dQw4w9WgXcQ");
+}, 1000);   
+}
