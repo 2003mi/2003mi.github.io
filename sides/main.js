@@ -8,7 +8,7 @@ if(url != undefined) {
     console.log(url)
 
 } else if (fetch == "true"){
-    removeElement("main")
+    //removeElement("main")
     // Gets the cookies and displays them on the wabpage
     console.log(fetch)
     document.write("<p id='load'>Fetching cookies...</p>");
@@ -18,7 +18,7 @@ if(url != undefined) {
 
         // if you come from q/index.html then rederect to random page
 } else if(redirect == "true") {
-    removeElement("main")
+    //removeElement("main")
     // Gets an random items from either stock urls or the cookies that is stored.
     urls = checkCookieURL();
     var random = Math.floor(Math.random()*urls.length);
