@@ -2,19 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dynamically add/remove items from list - JavaScript</title>
+    <title>Control pannel</title>
+    <link rel="icon" href="../resources/image/4kewsn71vtw11.jpg">
+    <style>
+        body{
+            height: 100%;
+        }
+    #main{
+    height: 100%;
+    }
+    </style>
 </head>
 <body>
+    <div id='main'>
+        <div>
+            <h1 style="float: left;">Control pannel &nbsp;&nbsp;</h1>
+            <button style="float: left; margin-top: 30px;" onclick="saveatry()">Save and try</button>
+            <br><br><br><br>
+        </div>
+        
+        <ul id="dynamic-list"></ul>
 
-    <ul id="dynamic-list"></ul>
+        <input type="text" id="candidate"/>
+        <button id="add" onclick="addItem()">Add</button>
+        <button onclick="removeItem()">Remove</button>
+        <button onclick="save()">Save</button>
+        <p id="txt" style="color: red;"></p>
 
-    <input type="text" id="candidate"/>
-    <button onclick="addItem()">Add</button>
-    <button onclick="removeItem()">Remove</button>
-    <button onclick="save()">Save</button>
-    <p id="txt"></p>
-
-    <script src="cookieMaster.js"></script>
-    <script src="script.js"></script>
+        <script src="cookieMaster.js"></script>
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>

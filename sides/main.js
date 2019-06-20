@@ -1,11 +1,3 @@
-// Stock urls until you add some cookies.
-var urls = new Array(
-    "https://youtu.be/cPJUBQd-PNM",
-    "https://youtu.be/er6OYKP20n0",
-    "https://youtu.be/bjMeiHBWns8"
-);
-
-
 // Gets params that was sent with the url
 url = getAllUrlParams().url;
 fetch = getAllUrlParams().fetch;
@@ -28,6 +20,7 @@ if(url != undefined) {
 } else if(redirect == "true") {
     removeElement("main")
     // Gets an random items from either stock urls or the cookies that is stored.
+    urls = checkCookieURL();
     var random = Math.floor(Math.random()*urls.length);
     // delets main and replazes it with url that will be rederected to.
     //removeElement("main")
@@ -35,7 +28,8 @@ if(url != undefined) {
     window.location.href = urls[random];
     window.location.replace(urls[random]);
 } else {
-
+    window.location.href = "qindex.html";
+    window.location.replace("qindex.html");
 }
 
 function submit(){
@@ -53,4 +47,4 @@ function submit(){
     };
 };
 
-document.getElementById("txt").innerHTML = document.cookie;
+//document.getElementById("txt").innerHTML = document.cookie;
