@@ -55,18 +55,23 @@ function removeItem(id = undefined){
 
 function save(){
     newStr = JSON.stringify(url_list);
+    document.cookie = "url_list=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     setCookie("url_list", newStr, 365)
     console.log(getCookie("url_list"));
 };
 function load(){
     tmp_urlLST = getCookie("url_list");
     console.log(tmp_urlLST)
+    for(let i = 0; i < tmp_urlLST.length; i++){
+
+        console.log(tmp_urlLST[i]);
+        additem(tmp_urlLST[i])
+     
+     };
 };
 
 load();
-addItem("burger");
 
-document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
 console.log(document.cookie)
 candidate.value = null;
 
