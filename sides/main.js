@@ -53,3 +53,4 @@ function submit(){
     };
 };
 
+document.getElementById("txt").innerHTML = document.cookie;
