@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-family: Consolas, monaco, monospace;
+    width: 100%;
+    height: 100%;
+    /*overflow-y: scroll;*/
+    overflow-x: hidden;
+}
+
+/*ul{
+    padding: 20;
+}
+li{
+    font-size: 14px;
+    list-style-type: square;
+}*/
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: none;
+    margin-bottom: none;
+}
+
+li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+li:before {
+    content: ">";
+    padding-right: 5px;
+}
+
+.m:before{
+    content: "-";
+}
+input{
+    border: none;
+    border-color: transparent;
+    outline: none !important;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-family: Consolas, monaco, monospace;
+    width: 99%;
+    padding: none;
+    margin: none;
+}
