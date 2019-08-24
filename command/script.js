@@ -48,11 +48,11 @@ function command(cmda){
     if(cmda == "Hello world!"){
         additem("yay", "lightgreen", "m")
     }
-    if (cmda.startsWith("color")){
-        var tmp = cmda.replace('color: ','');
+    if (cmda.startsWith("color ")){
+        var tmp = cmda.replace('color ','');
         additem("You got this color", tmp)
     }
-    if (cmda.startsWith("url")){
+    if (cmda.startsWith("url ")){
         var tmp = cmda.replace('url ','');
         window.open(tmp)
     }
