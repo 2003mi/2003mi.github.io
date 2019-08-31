@@ -1,8 +1,3 @@
-var input = document.getElementById('myTextInput');
-var list = document.getElementById('history');
-input.focus();
-input.select();
-
 /*var node = document.createElement("LI");                 // Create a <li> node
 var textnode = document.createTextNode("Green");         // Create a text node
 node.appendChild(textnode);                              // Append the text to <li>
@@ -20,7 +15,7 @@ input.addEventListener("keyup", function(event) {
       dotask();
     }
   });
-  
+
 function dotask(){
     var inval = input.value;
     input.value = ""; 
@@ -46,18 +41,45 @@ function additem(textval, color = "white", class_ = ""){
 
 function command(cmda){
     if(cmda == "Hello world!"){
-        additem("yay", "lightgreen", "m")
+        additem("yay", "lightgreen", "m");
     }
     if (cmda.startsWith("color ")){
         var tmp = cmda.replace('color ','');
-        additem("You got this color", tmp)
+        additem("You got this color", tmp);
     }
     if (cmda.startsWith("url ")){
         var tmp = cmda.replace('url ','');
         window.open(tmp)
     }
     if (cmda.startsWith("exit")){
+        additem("👌", "white", "big");
         window.location.href = "https://2003mi.github.io/";
         window.location.replace("https://2003mi.github.io/");
     }
+    if (cmda.startsWith(">")){
+        var tmp = cmda.replace('>','');
+        if(tmp !=""){
+            meme(tmp);
+        } else {
+            meme();
+        }        
+    }
+    if (cmda.startsWith("cls") || cmda.startsWith("clear")){
+        cls();
+    }
+    if (cmda.startsWith("open")){
+        open();
+    }
 }
+
+function hack(){
+    if(debug == 0) {
+        additem("debug = 1", "lightgreen", "none");
+        console.log("Welcome to debug mode.");  
+        debug = 1;        
+    } else {
+        additem("debug = 0", "lightgreen", "none");
+        console.log("Welcome to debug mode.");  
+        debug = 0;
+    }
+};

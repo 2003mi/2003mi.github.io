@@ -21,8 +21,6 @@ ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
-    padding-bottom: none;
-    margin-bottom: none;
 }
 
 li {
@@ -38,6 +36,16 @@ li:before {
 .m:before{
     content: "-";
 }
+.none:before{
+    content: " ";
+}
+.big:before{
+    content: " ";
+}
+.big{
+    font-size: 69px;
+}
+
 input{
     border: none;
     border-color: transparent;
