@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fiUp</title>
+
+    <style>
+            .item1 { grid-area: header; }
+            .item2 { grid-area: menu; }
+            .item3 { grid-area: main; }
+            .item4 { grid-area: right; }
+            .item7 { grid-area: bba; }
+            .item5 { grid-area: footer; }
+            .item6 { grid-area: st; }
+            .item8 { grid-area: more; }
+            
+            .grid-container {
+              display: grid;
+              grid-template-areas:
+                'header header header header header header'
+                'main main main main main main'
+                'menu menu menu menu footer footer'
+                'more more more st bba bba'
+                'right right right right right right';
+              grid-gap: 0px;
+              background-color: #2196F3;
+              padding: 10px;
+            }
+            
+            .grid-container > div {
+              background-color: rgba(255, 255, 255, 0.3);
+              text-align: center;
+              padding: 0px 0;
+              font-size: 15px;
+            }
+            
+            .itemcenter{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                
+            }
+            .center-bt{
+                margin: 0 auto;
+            }
+            .item5 button{
+                width: 31%
+            }
+            p{
+                margin: auto;
+            }
+            .main{
+                width: 75%; margin: 0 auto; 
+            }
+            @media only screen and (max-width: 980px) {
+                .main{
+                    width: 100%; margin: 0 auto; 
+                }
+            }
+            </style>
+</head>
+<body>
+    <div class="main">
+    <div class="grid-container">
+      <div class="item1"><h1>Add an item</h1></div>
+      <div class="item6, itemcenter"><button class="center-bt" onclick="saveatry()">Save and try</button><label for="meeting">Due: </label><input id="meeting" type="date"/></div>
+      <div class="item2"><input style="width: 99%" type="text" id="candidate" value="this is an test"/></div>
+      <div class="item3"><ul id="dynamic-list"></ul></div>  
+      <div class="item4"></div>
+      <div class="item5">
+            <button id="add" onclick="addItem()">Add</button>
+            <button onclick="removeItem()">Del</button>
+            <button onclick="save()">Save</button>
+      </div>
+      <div class="item7"></div>
+      <div class="item8"><p id="txt" style="color: red;">error no input</p></div>
+    </div>
+    <script src="../getparam.js"></script>
+</div>
+</body>
+</html>
