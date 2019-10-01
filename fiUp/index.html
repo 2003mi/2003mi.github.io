@@ -58,6 +58,25 @@
                 .main{
                     width: 100%; margin: 0 auto; 
                 }
+                .grid-container > div {
+                    background-color: rgba(255, 255, 255, 0.0);
+                    text-align: center;
+                    padding: 0px 0;
+                    font-size: 15px;
+                }
+                .grid-container {
+                    display: block;
+                    grid-template-areas:
+                        'header header header header header header'
+                        'main main main main main main'
+                        'menu menu menu menu footer footer'
+                        'more more more st bba bba'
+                        'right right right right right right';
+                    grid-gap: 0px;
+                    background-color: #2196F3;
+                    padding: 10px;
+                }
+            
             }
             </style>
 </head>
@@ -65,19 +84,26 @@
     <div class="main">
     <div class="grid-container">
       <div class="item1"><h1>Add an item</h1></div>
-      <div class="item6, itemcenter"><button class="center-bt" onclick="saveatry()">Save and try</button><label for="meeting">Due: </label><input id="meeting" type="date"/></div>
+      <div class="item3"><ul id="dynamic-list">test element</ul></div>  
       <div class="item2"><input style="width: 99%" type="text" id="candidate" value="this is an test"/></div>
-      <div class="item3"><ul id="dynamic-list"></ul></div>  
       <div class="item4"></div>
       <div class="item5">
             <button id="add" onclick="addItem()">Add</button>
             <button onclick="removeItem()">Del</button>
             <button onclick="save()">Save</button>
       </div>
+      <div class="item6, itemcenter"><button class="center-bt" onclick="saveatry()">Save and try</button><label for="meeting">Due: </label><input id="meeting" type="date"/></div>
       <div class="item7"></div>
       <div class="item8"><p id="txt" style="color: red;">error no input</p></div>
     </div>
-    <script src="../getparam.js"></script>
 </div>
+    <script src="../getparam.js"></script>
+    <script>
+        if (/Android|webOS|Mobile|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            alert(navigator.userAgent + " is mobile")
+        } else {
+            alert(navigator.userAgent + " is not mibile")
+        }
+    </script>
 </body>
 </html>
