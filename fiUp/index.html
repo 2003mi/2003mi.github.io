@@ -101,8 +101,9 @@
     <script>
         if (/Android|webOS|Mobile|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
             alert(navigator.userAgent + " is mobile")
+            document.getElementById("txt").innerHTML = navigator.userAgent + " is mobile";
         } else {
-            alert(navigator.userAgent + " is not mibile")
+            document.getElementById("txt").innerHTML = navigator.userAgent + " not mobile";
         }
     </script>
 </body>
