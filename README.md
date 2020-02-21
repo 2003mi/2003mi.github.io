@@ -1,5 +1,5 @@
 # 2003mi.github.io
-Good wibeside that is all...
+Worst [website](https://2003mi.github.io/). That is all...
 
 Btw this gif sums up this website pretty well
 
