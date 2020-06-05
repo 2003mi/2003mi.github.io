@@ -1,0 +1,14 @@
+#cent {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -75px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    }​
+
+#mme{
+    top:50%
+}

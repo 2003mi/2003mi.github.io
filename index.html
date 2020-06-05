@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1920, initial-scale=1.0">
-    <title>This is just the beggining</title>
+    <title>This is just the beginning</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <script>
-        window.location.href = 'old/index.html';
+        function goto_old() {
+            window.location.href = 'old/index.html';
+        }
+        console.log("O hello there. Are you looking for more info? Type \"more()\"");
+        function more() {
+            return("There is no more yet. ¯\\_(ツ)_/¯");
+        }
     </script>
-    <p>This is the worng plaze cheif. Please go to old/index.html</p>
+    <div id="cent">
+        <p>I am a self-taught programmer.<br> Projects to come:<br> "Find out soon&trade;"<br> I will begin on some new and "useful" projects soon&trade;. To find the projects visit my GitHub.</p>
+        <a href="https://github.com/2003mi/2003mi.github.io">GitHub</a><br>
+        <a href="javascript:goto_old();">Old page</a>
+        
+    </div>
 </body>
 </html>
+
+<!--
+    Github integratet and on the top a line whit an url to the old site.
+-->
